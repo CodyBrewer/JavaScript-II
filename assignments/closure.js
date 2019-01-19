@@ -2,9 +2,13 @@
 // Write a simple closure of your own creation.  Keep it simple!
 
 
+displayInventory();
 // ==== Challenge 2: Create a counter function ====
+let counts = 0;
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  counts += 1;
+  return counts;
 };
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
