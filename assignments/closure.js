@@ -1,8 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let a = 3;
+function addThree(x) {
+  let ret = x + 3;
+  return ret;
+}
+let b = addThree(a);
+console.log(b);
 
-
-displayInventory();
 // ==== Challenge 2: Create a counter function ====
 let counts = 0;
 const counter = () => {
@@ -10,6 +15,8 @@ const counter = () => {
   counts += 1;
   return counts;
 };
+let newCounter = counter();
+console.log(newCounter);
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
