@@ -90,5 +90,13 @@ let companies = runners.map(element => element.company_name);
 console.log(companies);
 
 // Problem 2
-
+//The tshirt company no longer makes a shirt larger than XL get a list of everyone that ordered a 2XL and up
+let shirtOrdersNeeded = runners.filter(shirt => shirt.shirt_size === '2XL' || shirt.shirt_size === '3XL');
+console.log("We need to find another company to order shirts for these runners " , shirtOrdersNeeded);
 // Problem 3
+//We need to get a list of everyones emails to subscribe then to our mailing list
+let emails = [];
+runners.forEach(element => {
+    emails.push(element.email);
+})
+console.log(emails);
